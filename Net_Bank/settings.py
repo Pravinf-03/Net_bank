@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-b4q681q%@-g1c(0&fgsd$vn7wxe)d69x3kf(c&k&nqm=9!%fw$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.1.9","127.0.0.1","localhost","*"]
+ALLOWED_HOSTS = ["127.0.0.1","localhost","*"]
 
 
 # Application definition
@@ -82,10 +82,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db_netbank',
-        'USER': 'root',
-        'PASSWORD': 'g0d$eye',
-        'HOST': '127.0.0.1',
-        'PORT': '3307',
+        'USER': 'your_db_user',
+        'PASSWORD': 'your_db_passsword',
+        'HOST': 'your_db_host',
+        'PORT': 'your_db_port',
         'OPTIONS': {'unix_socket':'/home/MySQL/mysql.sock','init_command':"SET sql_mode='STRICT_TRANS_TABLES'"},
     }
 }
