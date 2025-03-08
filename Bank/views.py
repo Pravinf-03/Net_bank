@@ -26,8 +26,8 @@ def captchaValidate(request):
     
 #Function to send Mail
 def send_mail(rmail,sub,body):
-    smail = "ip.tracker.mailer@gmail.com"
-    password = "iqtovoynrterpepv"
+    smail = "Your_mail_address"
+    password = "Your_mail_password"
     msg=MIMEMultipart()
     msg["From"]=smail
     msg["To"]=rmail
